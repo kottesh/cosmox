@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    cursor: pointer;
+}
+
+p {
+    line-height: 1.75;
+}
+
+.nav-bar-container a{
+    all: unset;
+    cursor: pointer;
+}
+
+.nav-bar-container a:hover {
+    text-decoration-line: underline;
+    color: grey;
+}
+
+.nav-bar-container {
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    width: 100%;
+    transition: 0.7s background-color;
+}
+
+.nav-bar-blur {
+    background-color: rgba(255, 255, 255, 0.800);
+    backdrop-filter: blur(10px);
+}
+
+.nav-bar-max-size {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1320px;
+    height: 60px;
+    padding: 6px;
+}
+
+.nav-elements-wrapper ul, li, a{
+    width: fit-content;
+    height: 60px;
+    margin: 0 auto;
+    padding-left: 0; 
+}
+
+.nav-bar-container h1 {
+    margin: 0;
+}
+
+.main-logo {
+    line-height: 60px;
+}
+
+.nav-elements li {
+    display: inline;
+    float: left;        
+    list-style: none;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.nav-elements {
+    display: flex;
+    flex: 8;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-elements a {
+    padding: 0 8px;
+}
+
+.main-logo {
+    font-style: oblique;
+}
+
+.container-hero {
+    display: block;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+}
+
+.hero {
+    background-color: rgb(121, 146, 192);
+    background-image: url("../../images/land-page/image2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.container-hero p{
+    font-size: 1.25rem;
+}
+.container-hero h1 {
+    font-size: 3rem;
+}
+.telescope-head h{
+   text-align: right; 
+}
+.telescopes-container {
+    max-width: 1320px;
+    margin-left: auto; 
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card-wrapper {
+    display: flex;
+}
+
+.telescopes-container h2 {
+    text-align: center;
+}
+
+.ts1, 
+.ts2, 
+.ts3, 
+.ts4, 
+.ts5, 
+.ts6 {
+    padding: 24px;
+} 
+
+.ts1:hover,
+.ts2:hover,
+.ts3:hover,
+.ts4:hover,
+.ts5:hover,
+.ts6:hover {
+    filter: blur(2px);
+}
+
+
+.image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+    width: 384px;
+    height: 220px;
+}
+
+.content p {
+    font-size: 1.25rem;
+    word-wrap: break-word;
+} 
+
+.footer {
+    background-color: #FAFAFA;
+}
+
+.footer-content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-copyright {
+    text-align: center;
+}
