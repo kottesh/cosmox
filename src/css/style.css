@@ -137,6 +137,7 @@ p {
 
 .card-wrapper {
     display: flex;
+    overflow: hidden;
 }
 
 .card {
@@ -160,7 +161,8 @@ p {
     flex-direction: row-reverse;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -60px;
+    transition: 1s bottom;
 }
 
 .card-content p {
@@ -168,6 +170,11 @@ p {
     font-size: 1.25rem;
     color: #ffffff; 
     margin: 0;
+}
+
+.image:hover .card-content {
+    transition: 1s;
+    bottom: 0;
 }
 
 .button {
