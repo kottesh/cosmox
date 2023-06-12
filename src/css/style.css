@@ -1,4 +1,4 @@
-*, *::after *::before {
+*, *::after, *::before {
     box-sizing: inherit;
 }
 
@@ -40,7 +40,7 @@ p {
 }
 
 .nav-bar-blur {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(8px);
     /*border-bottom: 1px solid rgba(128, 128, 128, 0.400);*/
 }
@@ -51,7 +51,7 @@ p {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1320px;
+    max-width: 1280px;
     height: 44px;
     padding: 6px;
 }
@@ -96,7 +96,7 @@ p {
 
 .container-hero {
     display: block;
-    max-width: 1320px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5rem;
@@ -119,11 +119,10 @@ p {
     font-size: 3rem;
 }
 
-
 .telescope-container {
     padding-top: 84px;
     padding-bottom: 84px;
-    max-width: 1320px; 
+    max-width: 1280px; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -141,7 +140,7 @@ p {
 }
 
 .card {
-    margin: auto 8px;
+    margin: auto 12px; /*this margin adds the gap between the cards*/
     display: flex;
     position: relative;
 }
@@ -194,8 +193,7 @@ p {
 }
 
 .first-space-flight-container {
-    max-width: 1320px;
-    overflow: hidden;
+    max-width: 1280px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -206,17 +204,13 @@ p {
 }
 .first-space-flight-webm {
     height: 520px;
+    display: flex;
+    align-items: center;
     overflow: hidden;
 }
 
 .first-space-flight-webm video {
     object-fit: cover;
-}
-
-.nasa-credits p{
-    color: #FAFAFA;
-    padding-left: 16px;
-    font-weight: bold;
 }
 
 .footer {
@@ -226,7 +220,7 @@ p {
 .footer-content {
     padding-top: 120px;
     padding-bottom: 120px;
-    max-width: 1320px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
 }
