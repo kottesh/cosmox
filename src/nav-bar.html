@@ -1,3 +1,4 @@
+<html>
 <style>
 *, *::after, *::before {
     box-sizing: inherit;
@@ -17,10 +18,6 @@ a {
     cursor: pointer;
 }
 
-p {
-    line-height: 1.75;
-}
-
 .nav-bar-container a{
     all: unset;
     cursor: pointer;
@@ -34,6 +31,7 @@ p {
 .nav-bar-container {
     background-color: rgba(255, 255, 255, 1);
     position: sticky;
+    width: 100%;
     top: 0;
     z-index: 9;
     transition: background-color 0.7s ease-in-out, border-bottom 0.7s; 
@@ -51,13 +49,12 @@ p {
     margin-left: auto;
     margin-right: auto;
     max-width: 1280px;
-    height: 44px;
+    height: 54px;
     padding: 6px;
 }
 
 .nav-elements-wrapper ul, li, a{
     width: fit-content;
-    /*height: 54px;*/
     margin: 0 auto;
     padding-left: 0; 
 }
@@ -84,33 +81,25 @@ p {
     padding: 0 8px;
 }
 
-.main-logo {
-    font-style: oblique;
-}
-
-.main__logo:hover {
-    color: black;
-}
-.main__logo:visited {
-    color: black;
-}
-.main__logo:active {
-    
-    color:black;
+.main-logo img {
+	width: 54px;
+	height: 54px;
+    padding-top: 8px;
 }
 
 </style>
+<body>
 <div class="nav-bar-container">
     <div class="nav-bar-max-size">
         <div class="main-logo">
-    	    <a class="main__logo" href="/src/main.html"><h1>CX</h1></a>
+	    <a class="main__logo" href="/src/main.html"><img src="/src/../images/CX.svg"></a>
+    	    <!--a class="main__logo" href="/src/main.html"><h1>CX</h1></a-->
         </div>
         <nav class="nav-elements-wrapper">
             <ul class="nav-elements">
                 <li><a href="/src/main.html">Home</a></li>
                 <li><a href="/src/pages/discover.html">Discover</a></li>
                 <li><a href="#">Launches</a></li>
-                <li><a href="#">Community</a></li>
                 <li><a href="#">Astronauts</a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="/src/pages/about.html">About</a></li>
@@ -118,4 +107,5 @@ p {
         </nav>
     </div>
 </div>
-
+</body>
+</html>

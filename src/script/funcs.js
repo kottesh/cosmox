@@ -11,7 +11,9 @@ $(document).ready(function(){
     });
 });
 
-$(function(){
-    $("#navbar-placeholder").load("/src/nav-bar.html");
+$(document).ready(function() {
+    $.get('/src/nav-bar.html', function(data) {
+        $('#navbar-placeholder').html(data);
+    });
 });
 
