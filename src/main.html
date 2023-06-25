@@ -10,28 +10,15 @@
     <link rel="apple-touch-icon" href="../images/favicon/apple-touch-icon.png">
     <link rel="manifest" href="../images/favicon/site.webmanifest">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Carousel Effect-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <meta name="theme-color" content="#ffffff">
     <title>COSMOX</title>
 </head>
 <body>
-    <div class="nav-bar-container">
-        <div class="nav-bar-max-size">
-            <div class="main-logo">
-                <h1>CX</h1>
-            </div>
-            <nav class="nav-elements-wrapper">
-                <ul class="nav-elements">
-                    <li><a href="main.html">Home</a></li>
-                    <li><a href="#">Discover</a></li>
-                    <li><a href="#">Launches</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Astronauts</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    <div id="navbar-placeholder"></div>
     <div class="hero">
         <div class="container-hero">
             <h1>Welcome to COSMOX</h1>
@@ -47,7 +34,7 @@
             <p>These extraordinary instruments serve as our eyes in space, equipped with state-of-the-art optics and advanced sensor arrays that surpass the limitations imposed by Earth's turbulent atmosphere. Freed from the distortion caused by atmospheric turbulence, space telescopes deliver breathtakingly sharp and detailed observations, unravelling the intricate tapestry of the cosmos.</p>
         </div>
          <div class="card-wrapper">
-            <div class="card card1">
+            <div class="card card1 slick-slide">
                 <div class="image img1" style='background-image: url("../images/land-page/spitzer.jpeg");'>
                     <div class="card-content">
                         <div class=button><span>Know more</span></div>
@@ -55,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card card2">
+            <div class="card card2 slick-slide">
                 <div class="image img2" style="background-image: url('../images/land-page/kepler.jpeg');">
                     <div class="card-content">
                         <div class=button><span>Know more</span></div>
@@ -63,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card card3">
+            <div class="card card3 slick-slide">
                 <div class="image img3" style="background-image: url('../images/land-page/webb.jpeg');">
                     <div class="card-content">
                         <div class=button><span>Know more</span></div>
@@ -71,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card card4">
+            <div class="card card4 slick-slide">
                 <div class="image img4" style="background-image: url('../images/land-page/nustar.jpg');">
                     <div class="card-content">
                         <div class=button><span>Know more</span></div>
@@ -79,7 +66,7 @@
                     </div>
                </div> 
             </div>
-            <div class="card card5">
+            <div class="card card5 slick-slide">
                 <div class="image img5" style="background-image: url('../images/land-page/tess.jpeg');">
                     <div class="card-content">
                         <div class=button><span>Know more</span></div>
@@ -87,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card card6">
+            <div class="card card6 slick-side">
                 <div class="image img6" style="background-image: url('../images/land-page/hubble.jpeg');">
                     <div class="card-content">
                         <div class=button><span>Know more</span></div>

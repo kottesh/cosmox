@@ -10,3 +10,8 @@ $(document).ready(function(){
         }
     });
 });
+
+$(function(){
+    $("#navbar-placeholder").load("/src/nav-bar.html");
+});
+

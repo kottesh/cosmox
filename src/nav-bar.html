@@ -1,0 +1,121 @@
+<style>
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+p {
+    line-height: 1.75;
+}
+
+.nav-bar-container a{
+    all: unset;
+    cursor: pointer;
+    color: #424245;
+}
+
+.nav-bar-container a:hover {
+    color: black;
+}
+
+.nav-bar-container {
+    background-color: rgba(255, 255, 255, 1);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    transition: background-color 0.7s ease-in-out, border-bottom 0.7s; 
+}
+
+.nav-bar-blur {
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+}
+
+.nav-bar-max-size {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    height: 44px;
+    padding: 6px;
+}
+
+.nav-elements-wrapper ul, li, a{
+    width: fit-content;
+    /*height: 54px;*/
+    margin: 0 auto;
+    padding-left: 0; 
+}
+
+.nav-bar-container h1 {
+    margin: 0;
+}
+
+.nav-elements li {
+    display: inline;
+    float: left;        
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-elements {
+    display: flex;
+    flex: 8;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-elements a {
+    padding: 0 8px;
+}
+
+.main-logo {
+    font-style: oblique;
+}
+
+.main__logo:hover {
+    color: black;
+}
+.main__logo:visited {
+    color: black;
+}
+.main__logo:active {
+    
+    color:black;
+}
+
+</style>
+<div class="nav-bar-container">
+    <div class="nav-bar-max-size">
+        <div class="main-logo">
+    	    <a class="main__logo" href="/src/main.html"><h1>CX</h1></a>
+        </div>
+        <nav class="nav-elements-wrapper">
+            <ul class="nav-elements">
+                <li><a href="/src/main.html">Home</a></li>
+                <li><a href="/src/pages/discover.html">Discover</a></li>
+                <li><a href="#">Launches</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Astronauts</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="/src/pages/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
