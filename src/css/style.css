@@ -24,6 +24,14 @@ p {
     line-height: 1.75;
 }
 
+.button a:link,
+.button a:active,
+.button a:visited,
+.button a:hover{
+	color: black;
+	text-decoration: none;
+}
+
 .container-hero {
     display: block;
     max-width: 1280px;
@@ -67,36 +75,37 @@ p {
 
 .card-wrapper {
     display: flex;
-    overflow: hidden;
+    max-width: 1300px;
+    height: 540px;
+    margin: 0 auto;
+    gap: 1.25rem;
 }
 
 .card {
-    margin: 0 12px; /*this margin adds the gap between the cards*/
-    display: flex;
-    position: relative;
+	margin: 0 12px;
+	display: flex;
+	position: relative;
 }
-
 .image {
-    width: 1280px;
-    height: 720px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 14px;
+	height: 540px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 14px;
 }
 
 .card-content {
-    margin: 8px;
-    padding: 12px;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    position: absolute;
-    right: 0;
-    bottom: -70px;
-    transition: 1s bottom;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    backdrop-filter: blur(24px);
+	margin: 8px;
+	padding: 12px;
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	position: absolute;
+	right: 0;
+	bottom: -70px;
+	transition: 1s bottom;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	backdrop-filter: blur(24px);
 }
 
 .card-content p {
@@ -121,6 +130,7 @@ p {
     cursor: pointer;
     transition: 0.5s background-color;
 }
+
 .button span{
     font-weight: bold;
     font-size: 14px; 

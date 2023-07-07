@@ -17,3 +17,35 @@ $(document).ready(function() {
     });
 });
 
+
+$(document).ready(function() {
+           $('.card-wrapper').slick({
+       	centerMode: true,
+       	centerPadding: '60px',
+               dots: true,
+               infinite: true,
+               speed: 500,
+               slidesToShow: 1,
+               slidesToScroll: 1,
+       	autoplay: true,
+       	arrows: true,
+       	autoplaySpeed: 2000,
+               responsive: [
+                   {
+                       breakpoint: 768,
+                       settings: {
+                           slidesToShow: 1
+                       }
+                   }
+               ]
+           });
+       });
+
+carousel.on('afterChange', function(event, slick, currentSlide) {
+	var $activeSlides = $(slick.$slides.get(currentSlide))
+	.add($(slick.$slides.get(currentSlide + 1)))
+	.add($(slick.$slides.get(currentSlide - 1)));
+	
+	$activeSlides.addClass('active-slide');
+});
+
